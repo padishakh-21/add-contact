@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://s3.amazonaws.com/images.ecwid.com/images/17714383/1126080861.jpg">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <title>Add contact</title>
+</head>
+
+<body>
+    <h2 class="h2 text-center fw-bold text-primary mt-2 mb-3">Kontaktlarni Qo'shish</h2>
+
+    <div class="container">
+        <div class="row">
+            <div class="add-contact-box col-6">
+
+                <form class="js-add-contact-form shadow p-2" method="POST">
+                    <label class="d-flex align-items-center mb-3">
+            <span class="text-nowrap me-3 w-50 fw-bold text-primary fs-5">Ism kiriting</span>
+            
+            <input class="js-name-input form-control" type="text" placeholder="Ism">
+          </label>
+
+                    <label class="d-flex align-items-center mb-3">
+            <span class="text-nowrap me-3 w-50 fw-bold text-primary fs-5">Familiya kiriting</span>
+            
+            <input class="js-surname-input form-control" type="text" placeholder="Familiya">
+          </label>
+
+
+                    <label class="d-flex align-items-center mb-3">
+            <span class="text-nowrap me-3 w-50 fw-bold text-primary fs-5">Tanlang</span>
+            
+            <select class="js-relation-select form-select" name="relations">
+              <option value="Qarindosh">Qarindosh</option>
+              
+              <option value="Do'stlar">Do'stlar</option>
+              
+              <option value="Begona">Begona</option>
+            </select>
+          </label>
+
+                    <label class="d-flex align-items-center mb-3">
+            <span class="text-nowrap me-3 w-50 fw-bold text-primary fs-5">Raqamni kiriting</span>
+            
+            <input class="js-telephone-input form-control" type="tel" placeholder="+9989">
+          </label>
+
+                    <button class="btn btn-primary mt-3 fw-bold fs-5" type="submit">Kontakt Qo'shish</button>
+                </form>
+            </div>
+
+            <div class="contact-result-box col-6">
+                <ul class="js-contacts-list list-unstyled"></ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/utils.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
